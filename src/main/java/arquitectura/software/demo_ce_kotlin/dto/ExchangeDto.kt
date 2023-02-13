@@ -5,7 +5,7 @@ import java.math.BigDecimal
 
 
 data class ExchangeDto(
-        var request: ResponseDto,
+        var request: RequestDto,
         var result: BigDecimal,
         var info: InfoDto,
         var success: Boolean,
