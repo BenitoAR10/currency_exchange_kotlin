@@ -13,16 +13,7 @@ public class DemoCeKotlinApplication {
 
 		SpringApplication.run(DemoCeKotlinApplication.class, args);
 
-		LoggerContext loggerContext = (LoggerContext) LoggerFactory.getILoggerFactory();
 
-		JoranConfigurator configurator = new JoranConfigurator();
-		configurator.setContext(loggerContext);
-		loggerContext.reset();
-		try {
-			configurator.doConfigure("src/main/java/logback.xml");
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
 	}
 
 }
